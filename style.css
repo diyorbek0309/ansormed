@@ -58,4 +58,64 @@
   color: #000;
 }
 
+.text_white {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* General CSS finish */
+
+/* Navbar CSS start */
+
+nav {
+  padding: 24px 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_wrap a {
+  display: flex;
+  align-items: center;
+}
+
+.logo_wrap span {
+  font-family: OS;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin-left: 1rem;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 2rem;
+  font-family: OS;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Navbar CSS finish */
+
+/* Footer CSS start */
+
+footer {
+  padding: 24px 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Footer CSS finish */
