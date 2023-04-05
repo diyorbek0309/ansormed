@@ -1,0 +1,61 @@
+/* General CSS start */
+
+/* 1rem = 16px */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: OSC;
+}
+
+@font-face {
+  font-family: OS;
+  src: url("./assets/fonts/OpenSans.ttf");
+}
+
+@font-face {
+  font-family: OSC;
+  src: url("./assets/fonts/OpenSans-CondLight.ttf");
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.btn_red,
+.btn_transparent:hover {
+  background-color: #de2e54;
+  border-color: #de2e54;
+}
+
+.btn_red:hover {
+  background-color: #fff;
+  color: #de2e54; /* de - Red, 2e - Green, 54 - Blue */
+}
+
+.btn_transparent {
+  background: transparent;
+  border-color: #fff;
+}
+
+.section_title {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 120%;
+  color: #fff;
+}
+
+.text_black {
+  color: #000;
+}
+
+/* General CSS finish */
