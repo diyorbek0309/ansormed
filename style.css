@@ -29,6 +29,7 @@
   color: #fff;
   border-width: 2px;
   border-style: solid;
+  cursor: pointer;
 }
 
 .btn_red,
@@ -38,8 +39,8 @@
 }
 
 .btn_red:hover {
-  background-color: #fff;
-  color: #de2e54; /* de - Red, 2e - Green, 54 - Blue */
+  background-color: transparent;
+  border-color: #fff; /* de - Red, 2e - Green, 54 - Blue */
 }
 
 .btn_transparent {
@@ -66,6 +67,14 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* General CSS finish */
 
 /* Navbar CSS start */
@@ -90,12 +99,16 @@ nav {
   margin-left: 1rem;
 }
 
+.logo_wrap span:hover {
+  color: #de2e54;
+}
+
 .menu {
   display: flex;
   list-style: none;
 }
 
-.menu li {
+.menu li a {
   margin-left: 2rem;
   font-family: OS;
   font-size: 0.9rem;
@@ -103,9 +116,121 @@ nav {
   line-height: 150%;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: #222;
+}
+
+.menu li a:hover {
+  color: #de2e54;
+  cursor: pointer;
 }
 
 /* Navbar CSS finish */
+
+/* Banner CSS start */
+
+.banner {
+  height: 533px;
+  align-items: center;
+  background-color: #0eb4c1;
+}
+
+.banner__title {
+  margin-bottom: 1rem;
+}
+
+.banner__subtitle {
+  width: 440px;
+  height: 108px;
+  margin-bottom: 36px;
+  font-family: OS;
+  font-size: 1.125rem;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.banner-img {
+  height: 100%;
+  text-align: right;
+}
+
+.banner-img img {
+  transition: 0.5s all ease;
+  position: relative;
+  top: 29px;
+}
+
+.banner-img img:hover {
+  transform: scale(1.1);
+  top: 4px;
+}
+
+/* Banner CSS finish */
+
+/* Services CSS start */
+
+.services {
+  margin: 7.5rem 18rem;
+  text-align: center;
+}
+
+.services > h2 {
+  margin-bottom: 3.5rem;
+}
+
+.service_item {
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.service_img {
+  width: 200px;
+  height: 200px;
+  margin-right: 4rem;
+}
+
+.service_text {
+  text-align: left;
+}
+
+.service_text > h4 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  color: #222;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.service_text > p {
+  font-family: OS;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #444;
+}
+
+/* Services CSS finish */
+
+/* Register CSS start */
+
+.register {
+  background-color: #0eb4c1;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.register .section_title {
+  margin-bottom: 2.5rem;
+}
+
+.register .btn:first-child {
+  margin-right: 1.25rem;
+}
+
+.register .btn:last-child {
+  margin-left: 1.25rem;
+}
+
+/* Register CSS finish */
 
 /* Footer CSS start */
 
@@ -115,6 +240,10 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: #222;
+  color: #fff;
+}
+
+footer .menu a {
   color: #fff;
 }
 
